@@ -1,5 +1,5 @@
 setup-cosmo:
-	./scripts/setup-cosmo.sh
+	./scripts/setup-cosmo.sh $(COSMO_API_KEY)
 
 run-apollo-router:
 	./scripts/run-apollo-router.sh
