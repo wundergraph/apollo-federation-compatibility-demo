@@ -1,0 +1,26 @@
+federation_version: '=2.6.1'
+subgraphs:
+  users:
+    routing_url: http://localhost:4004/graphql
+    schema:
+      file: >-
+        /Users/jivus/Documents/VS
+        Code/apollo-federation-compatibility-demo/mygraph-default/subgraphs/users.graphql
+  pandas:
+    routing_url: http://localhost:4002/graphql
+    schema:
+      file: >-
+        /Users/jivus/Documents/VS
+        Code/apollo-federation-compatibility-demo/mygraph-default/subgraphs/pandas.graphql
+  products:
+    routing_url: http://localhost:4003/graphql
+    schema:
+      file: >-
+        /Users/jivus/Documents/VS
+        Code/apollo-federation-compatibility-demo/mygraph-default/subgraphs/products.graphql
+  inventory:
+    routing_url: http://localhost:4001/graphql
+    schema:
+      file: >-
+        /Users/jivus/Documents/VS
+        Code/apollo-federation-compatibility-demo/mygraph-default/subgraphs/inventory.graphql

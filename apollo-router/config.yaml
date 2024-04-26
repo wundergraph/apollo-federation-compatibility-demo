@@ -1,0 +1,14 @@
+sandbox:
+  enabled: true
+homepage:
+  enabled: false
+supergraph:
+  introspection: true
+  listen: 0.0.0.0:${env.PORT:-3002}
+include_subgraph_errors:
+  all: true
+override_subgraph_url:
+  inventory: http://host.docker.internal:4001/graphql
+  pandas: http://host.docker.internal:4002/graphql
+  products: http://host.docker.internal:4003/graphql
+  users: http://host.docker.internal:4004/graphql
